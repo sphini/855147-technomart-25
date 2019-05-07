@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Denis Skakalin](https://up.htmlacademy.ru/htmlcss/25/user/855147).
-* Наставник: `Неизвестно`.
+* Наставник: `Мария leuchtkafer Чернова`.
 
 ---
 
