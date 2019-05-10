@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <!--Сначала оформил полосу с корзиной как отдельную секцию, но затем слепил все вместе в <nav>. Думаю на блоки это все поделится в последствии div'ами-->
+        <a class="main-header-logo" href=""><img src="img/logo.svg" alt="лого 'Техномарт'" width=108 height=18></a>
+        <p>Поиск:</p>
+        <!--Тут будет форма поиска
+        Каким образом оформляются такие элементы, как Закладки:0, Корзина:0?
+        На сколько я понимаю, в этих случаях "элемент-значение", делается с помощью таблицы? Или это тоже формы, как и элемент поиска? -->
+        <p>Закладки:</p>
+        <!--Тут будет форма закладок-->
+        <p>Корзина:</p>
+        <!--Тут будет форма закладок-->
+        <a class="btn-header btn-order" href="#">Оформить заказ</a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+          <li><a href="shipping.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <span class="main-calling">+7(812)555-05-55</span>
+        <p class="main-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <ul class="main-user-form">
+          <li class="main-user-form-login btn-header"><a href="#">Войти</a></li>
+          <li class="main-user-form-reg btn-header"><a href="#">Регистрация</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <ul class="breadcrumbs">
+        <li><img src="img/home.svg" alt="Домашняя страница"></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="instruments.html">Инструмент</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
+      </ul>
+      <h2>Перфораторы</h2>
+      <section class="perforator-filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!--Тут будет форма фильтра-->
+      </section>
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </a>
+            </p>
+            <h3><a href="catalog-item.html">Перфоратор BOSCH BFG 3000</a></h3>
+            <span class="old-price">22500 р.</span>
+            <span class="new-price">15500 р.</span>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              </a>
+            </p>
+            <h3><a href="catalog-item.html">Перфоратор BOSCH BFG 6000</a></h3>
+            <span class="old-price">30500 р.</span>
+            <span class="new-price">25500 р.</span>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              </a>
+            </p>
+            <h3><a href="catalog-item.html">Перфоратор BOSCH BFG 2000</a></h3>
+            <span class="old-price">30500 р.</span>
+            <span class="new-price">25500 р.</span>
+          </li>
+          <!--Эти блоки повторяются 2 раза-->
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width=136 height=22></a>
+      <p class="">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55 <p>
+      <nav class="main-navigation">
+        <ul class="site-navigation-footer">
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="shipping.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="site-navigation-footer-products">
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="technics.html">Техника</a></li>
+          <li><a href="instruments.html">Инструмент</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      <p>2010-2017 Компания «‎Техномарт»‎ <br> Все права защищены <p>
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <p class="footer-feedback">
+        <b>Обратная связь:</b> <a class="button" href="mail@htmlacademy.ru">HTML Academy</a>
+      </p>
+      <p class="footer-copyright">
+        <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+
+    </footer>
+  </body>
+</html>
