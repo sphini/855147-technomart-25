@@ -7,13 +7,18 @@
   <body>
     <header class="main-header">
       <section class="main-header-basket-menu">
-        <a class="main-header-logo" href=""><img src="img/logo.svg" alt="лого 'Техномарт'" width=108 height=18></a>
+        <!--Импровизируя я пока что оформил верхнюю полосу в отдельную секцию, а все остальное в <nav>.
+        Но теперь стал задумываться, что логически это все <nav> а на секции потом разбить уже div'ами в дальнейшем.
+        Какой вариант более верный?-->
+        <a class="main-header-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width=108 height=18></a>
         <p>Поиск:</p>
-        <!--Тут будет форма поиска-->
+        <!--Тут будет форма поиска
+        Каким образом оформляются такие элементы, как Закладки:0, Корзина:0?
+        На сколько я понимаю, в этих случаях "элемент-значение", делается с помощью таблицы? Или это тоже формы, как и элемент поиска? -->
         <p>Закладки:</p>
         <!--Тут будет форма закладок-->
         <p>Корзина:</p>
-        <!--Тут будет форма закладок-->
+        <!--Тут будет форма корзины-->
         <a class="btn-header btn-order" href="#">Оформить заказ</a>
       </section>
       <nav class="main-navigation">
@@ -36,7 +41,7 @@
       </nav>
     </header>
     <main class="container">
-      <article class="article-about-us">
+      <article class="article-about-us"> <!--Выделил как артикль, так как слишком уж самостоятельно звучит этот блок-->
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br> Техномарт работает со многими транспортными компаниями: </p>
@@ -47,8 +52,44 @@
         </ul>
         <a class="btn-main" href="index.html">Подробнее о компании</a>
       </article>
-
-
+      <section class="section-contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:<p>
+        <!--Тут будет форма карты-->
+        <a class="btn-main btn-section-contacts" href="index.html">Заблудились? Напишите нам!</a>
+      </section>
     </main>
+    <footer class="main-footer">
+      <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width=136 height=22></a>
+      <p class="">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55 <p>
+      <nav class="main-navigation">
+        <ul class="site-navigation-footer">
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="shipping.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="site-navigation-footer-products">
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="technics.html">Техника</a></li>
+          <li><a href="instruments.html">Инструмент</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      <p>2010-2017 Компания «‎Техномарт»‎ <br> Все права защищены <p>
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <p class="footer-feedback">
+        <b>Обратная связь:</b> <a class="button" href="mail@htmlacademy.ru">HTML Academy</a>
+      </p>
+      <p class="footer-copyright">
+        <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+
+    </footer>
   </body>
 </html>
