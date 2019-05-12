@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <div class="main-header-menu">
-        <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="лого 'Техномарт'" width=108 height=18></a>
+        <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="лого 'Техномарт'" width="108" height="18"></a>
         <ul class="main-header-menu-elements">
           <li class="header-lookfor"><a href="lookfor.html">Поиск:</a></li>
           <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
@@ -53,10 +53,23 @@
         <h1 class="catalog-title">Перфораторы</h1>
       </div>
       <section class="perforator-filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Тут будет форма фильтра-->
+        <h2 class="find-by-title">Фильтр</h2>
+        <!--Тут будет формы фильтро по цене/производителю/питанию-->
+      </section>
+      <section class="perforator-sort">
+        <h2 class="find-by-title">Сортировка:</h2>
+        <ul class="sort-by">
+          <li class="sort-by-current"><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <ul class="sort-ways">
+          <li class="sort-way-down"><a href="#">По возрастанию</a></li>
+          <li class="sort-way-high"><a href="#">По убыванию</a></li>
+        </ul>
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Товары</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -83,11 +96,29 @@
           </li>
           <!--Эти блоки повторяются 2 раза-->
         </ul>
+        <div class="pagination-list-container">
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">1</li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">следующая</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="more-about">
+        <div class="more-about-container">
+          <h2 class="visually-hidden">Дополнительная информация</h2>
+          <b>Пара слов о перфораторах</b>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer-nav-container">
-        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width=136 height=22></a>
+        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width="136" height="22"></a>
         <ul class="site-nav-footer">
           <li><a href="about.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
