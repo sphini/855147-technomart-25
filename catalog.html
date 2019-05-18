@@ -9,9 +9,9 @@
       <div class="main-header-menu">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="лого 'Техномарт'" width="108" height="18"></a>
         <ul class="main-header-menu-elements">
-          <li class="header-lookfor"><a href="lookfor.html">Поиск:</a></li>
-          <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
-          <li class="header-basket"><a href="basket.html">Корзина:</a></li>
+          <li class="header-lookfor"><label>Поиск:<input type="search" name="search"></label></li>
+          <li class="header-bookmarks"><label>Закладки:<output name="bookmarks-sum">0</output></label></li>
+          <li class="header-basket"><label>Корзина:<output name="basket-sum">0</output></label></li>
         </ul>
         <a class="btn-header btn-order" href="#">Оформить заказ</a>
       </div>
@@ -53,11 +53,32 @@
         <h1 class="catalog-title">Перфораторы</h1>
       </div>
       <section class="perforator-filters">
-        <h2 class="find-by-title">Фильтр</h2>
-        <!--Тут будет формы фильтро по цене/производителю/питанию-->
+        <h2 class="title-find-by">Фильтр</h2>
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+          <!--Тут будет форма фильтро по цене. input type="range"?-->
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Bosch">Bosch</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Интерскол">Интерскол</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Makita">Makita</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Dewalt">Dewalt</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Bosch">Bosch</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Hitachi">Hitachi</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="radio" name="power" value="accumulator">Аккумуляторные</label></li>
+              <li><label><input class="visually-hidden filter-producers-checkbox" type="radio" name="power" value="net">Сетевые</label></li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="perforator-sort">
-        <h2 class="find-by-title">Сортировка:</h2>
+        <h2 class="title-find-by">Сортировка:</h2>
         <ul class="sort-by">
           <li class="sort-by-current"><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -78,6 +99,10 @@
               <span class="old-price">22500 р.</span>
               <span class="new-price">15500 р.</span>
             </a>
+            <div class="visually-hidden buy-bookmarks">
+              <p><button class="btn-buy-item" type="button">Купить</button></p>
+              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -86,6 +111,10 @@
               <span class="old-price">30500 р.</span>
               <span class="new-price">25500 р.</span>
             </a>
+            <div class="visually-hidden buy-bookmarks">
+              <p><button class="btn-buy-item" type="button">Купить</button></p>
+              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -93,6 +122,10 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="new-price">12500 р.</span>
             </a>
+            <div class="visually-hidden buy-bookmarks">
+              <p><button class="btn-buy-item" type="button">Купить</button></p>
+              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            </div>
           </li>
           <!--Эти блоки повторяются 2 раза-->
         </ul>
@@ -112,6 +145,15 @@
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
+        </div>
+      </section>
+      <section class="popup-item-added">
+        <h2 class="visually-hidden">Оформление покупки</h2>
+        <button class="popup-close" type="button">Закрыть</button>
+        <p>Товар добавлен в корзину!</p>
+        <div class="popup-item-added-btn-container">
+          <a class="btn-main btn-make-order" href="basket.html">Оформить заказ</a>
+          <a class="btn-main btn-continue" href="catalog.html">Продолжить покупки</a>
         </div>
       </section>
     </main>

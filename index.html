@@ -7,13 +7,15 @@
   <body>
     <header class="main-header">
         <div class="main-header-menu">
-          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="лого 'Техномарт'" width="108" height="18"></a>
-          <ul class="main-header-menu-elements">
-            <li class="header-lookfor"><a href="lookfor.html">Поиск:</a></li>
-            <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
-            <li class="header-basket"><a href="basket.html">Корзина:</a></li>
-          </ul>
-          <a class="btn-header btn-order" href="#">Оформить заказ</a>
+          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
+          <form action="/echo" method="post">
+            <ul class="main-header-menu-elements">
+              <li class="header-lookfor"><label>Поиск:<input type="search" name="search"></label></li>
+              <li class="header-bookmarks"><label>Закладки:<output name="bookmarks-sum">0</output></label></li>
+              <li class="header-basket"><label>Корзина:<output name="basket-sum">0</output></label></li>
+            </ul>
+            <a class="btn-header btn-order" href="#">Оформить заказ</a>
+          </form>
         </div>
         <div class="main-header-info">
           <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -164,15 +166,28 @@
         <div class="about-us-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:<p>
-          <a href="#"><img src="img/map-small.jpg" alt="Адрес Большая Конюшенная ул. 19 на карте" width="300" height="158"></a>
+          <a href="#"><img src="img/map-small.jpg" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="300" height="158"></a>
           <a class="btn-main btn-section-contacts" href="index.html">Заблудились? Напишите нам!</a>
+          <div class="popup-map visually-hidden">
+            <img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="970" height="476">
+            <button class="popup-close" type="button">Закрыть</button>
+          </div>
         </div>
       </section>
-
+      <section class="popup-feedback visually-hidden">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <label>Ваше имя:<input class="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия"></label>
+          <label>Ваш e-mail:<input class="feedback-form-email" type="text" name="e-mail" placeholder="email@example.com"></label>
+          <label>Текст письма:<textarea class="feedback-form-text" name="text" placeholder="В свободной форме"></textarea></label>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="popup-close" type="button">Закрыть</button>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer-nav-container">
-        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width="136" height="22"></a>
+        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="логотип компании Техномарт" width="136" height="22"></a>
         <ul class="site-nav-footer">
           <li><a href="about.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
