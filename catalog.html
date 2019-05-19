@@ -9,9 +9,8 @@
       <div class="main-header-menu">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="button-search" type="submit">Найти</button>
-          <label for="search" class="visually-hidden">Поиск на сайте</label>
           <input id="search" type="search" name="search" placeholder="Поиск:">
+          <label for="search" class="visually-hidden">Поиск на сайте</label>
         </form>
         <ul class="main-header-menu-elements">
           <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
@@ -59,7 +58,7 @@
       <section class="perforator-filters">
         <h2 class="title-find-by">Фильтр</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-          <!--Тут будет форма фильтро по цене. input type="range"?-->
+          <!--Тут будет хитрая реализация фильтра по цене.-->
           <fieldset>
             <legend>Производители:</legend>
             <ul>
@@ -103,9 +102,9 @@
               <span class="old-price">22500 р.</span>
               <span class="new-price">15500 р.</span>
             </a>
-            <div class="visually-hidden buy-bookmarks">
-              <p><button class="btn-buy-item" type="button">Купить</button></p>
-              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -115,9 +114,9 @@
               <span class="old-price">30500 р.</span>
               <span class="new-price">25500 р.</span>
             </a>
-            <div class="visually-hidden buy-bookmarks">
-              <p><button class="btn-buy-item" type="button">Купить</button></p>
-              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -126,9 +125,9 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="new-price">12500 р.</span>
             </a>
-            <div class="visually-hidden buy-bookmarks">
-              <p><button class="btn-buy-item" type="button">Купить</button></p>
-              <p><button class="btn-bookmark-item" type="button">В закладки</button></p>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
             </div>
           </li>
           <!--Эти блоки повторяются 2 раза-->
@@ -151,7 +150,7 @@
           </p>
         </div>
       </section>
-      <section class="popup-item-added">
+      <section class="popup-added">
         <h2 class="visually-hidden">Оформление покупки</h2>
         <button class="popup-close" type="button">Закрыть</button>
         <p>Товар добавлен в корзину!</p>

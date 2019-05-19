@@ -9,9 +9,8 @@
         <div class="main-header-menu">
           <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <button class="button-search" type="submit">Найти</button>
-            <label for="search" class="visually-hidden">Поиск на сайте</label>
             <input id="search" type="search" name="search" placeholder="Поиск:">
+            <label for="search" class="visually-hidden">Поиск на сайте</label>
           </form>
           <ul class="main-header-menu-elements">
             <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
@@ -170,13 +169,14 @@
           <p>Вы можете забрать товар сами, заехав в наш офис:<p>
           <a href="#"><img src="img/map-small.jpg" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="300" height="158"></a>
           <a class="btn-main btn-section-contacts" href="index.html">Заблудились? Напишите нам!</a>
-          <div class="popup-map visually-hidden">
-            <img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="970" height="476">
-            <button class="popup-close" type="button">Закрыть</button>
-          </div>
         </div>
       </section>
-      <section class="popup-feedback visually-hidden">
+      <section class="popup-map">
+        <h2 class="visually-hidden">Расположение фирмы</h2>
+        <img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="970" height="476">
+        <button class="popup-close" type="button">Закрыть</button>
+      </section>
+      <section class="popup-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <ul>
