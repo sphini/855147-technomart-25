@@ -75,6 +75,8 @@
           <li>
             <h4>Перфораторы</h4>
             <p>Настоящие мужские игрушки</p>
+            <button class="btn-slider-left" type="button">Назад</button>
+            <button class="btn-slider-right" type="button">Вперед</button>
             <a class="btn-main btn-offers-slider" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
@@ -92,6 +94,10 @@
               <span class="old-price">32500 р.</span>
               <span class="new-price">25500 р.</span>
             </a>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
+            </div>
           </li>
           <li class="popular-products-item">
             <a href="catalog-item.html">
@@ -100,6 +106,10 @@
               <span class="old-price">22500 р.</span>
               <span class="new-price">15500 р.</span>
             </a>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -108,6 +118,10 @@
               <span class="old-price">30500 р.</span>
               <span class="new-price">25500 р.</span>
             </a>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
@@ -115,6 +129,10 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="new-price">12500 р.</span>
             </a>
+            <div class="buy-bookmarks">
+              <a class="btn-buy-item" href="#">Купить</a>
+              <a class="btn-bookmark-item" href="#">В закладки</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -138,17 +156,31 @@
         <div class="services-container">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <!--Тут будет форма-->
-          <div class="services-tabs-container">
-            <ul class="services-tabs">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a></li>
-            </ul>
-            <div class="services-description">
-              <h3>Доставка</h3>
+        <div class="services-tabs-container">
+          <ul class="services-tabs">
+            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-delivery" checked>
+            <label for="tab-delivery">Доставка</label></li>
+            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-warranty">
+            <label for="tab-warranty">Гарантия</label></li>
+            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-credit">
+            <label for="tab-credit">Кредит</label></li>
+          </ul>
+          <div class="tabs">
+            <div>
+              <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
+            <div>
+              <h2>Гарантия</h2>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div>
+              <h2>Кредит</h2>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a class="btn-main btn-credit" href="#">Отправить заявку</a>
+            </div>
+          </div>
           </div>
         </div>
       </section>

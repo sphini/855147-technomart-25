@@ -58,7 +58,23 @@
       <section class="perforator-filters">
         <h2 class="title-find-by">Фильтр</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-          <!--Тут будет хитрая реализация фильтра по цене.-->
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="price-filter">
+              <div class="toggle-controls">
+                  <div class="line-controls"><div class="price-line"></div></div>
+                  <div class="toggle min-price"></div>
+                  <div class="toggle max-price"></div>
+              </div>
+              <div class="price-controls">
+                  <input class="min-price" id="min-price" type="text" value="0">
+                  <label class="visually-hidden" for="min-price">Минимальный ценовой порог</label>
+                  <p>-</p>
+                  <input class="max-price" id="max-price" type="text" value="30000">
+                  <label class="visually-hidden" for="max-price">Максимальный ценовой порог</label>
+                </div>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
