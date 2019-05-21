@@ -32,7 +32,7 @@
           <a class="form-log-out" href="#">Выход</a>
           <ul class="form-navigation">
             <li class="form-my-orders"><a href="#">Мои заказы</a></li>
-            <li class="form-go-personal"><a href="#">Регистрация</a></li>
+            <li class="form-go-personal"><a href="#">Личный кабинет</a></li>
           </ul>
         </div>
       </div>
@@ -81,19 +81,18 @@
           <fieldset>
             <legend>Производители:</legend>
             <ul>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Bosch">Bosch</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Интерскол">Интерскол</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Makita">Makita</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Dewalt">Dewalt</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Bosch">Bosch</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="checkbox" name="Hitachi">Hitachi</label></li>
+              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="Bosch" name="Bosch"><label for="Bosch">Bosch</label></li>
+              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="Интерскол" name="Интерскол"><label for="Интерскол">Интерскол</label></li>
+              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="Makita" name="Makita"><label for="Makita">Makita</label></li>
+              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="Dewalt" name="Dewalt" disabled><label for="Dewalt">Dewalt</label></li>
+              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="Hitachi" name="Hitachi"><label for="Hitachi">Hitachi</label></li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
             <ul>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="radio" name="power" value="accumulator">Аккумуляторные</label></li>
-              <li><label><input class="visually-hidden filter-producers-checkbox" type="radio" name="power" value="net">Сетевые</label></li>
+              <li><label><input class="visually-hidden filter-producers-radio" type="radio" name="power" value="accumulator">Аккумуляторные</label></li>
+              <li><label><input class="visually-hidden filter-producers-radio" type="radio" name="power" value="net">Сетевые</label></li>
             </ul>
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
