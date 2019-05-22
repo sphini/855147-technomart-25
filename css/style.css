@@ -74,6 +74,10 @@ a {
  color: #ffffff;
 }
 
+.basket-not-empty a {
+  background-color: #ee3643;
+}
+
 /* -------------------------- */
 
 .main-header-menu-elements a:hover {
@@ -234,8 +238,11 @@ a {
   border: none;
 }
 
-.filter legend {
+.filter {
   font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filter legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -248,9 +255,115 @@ a {
   line-height: 20px;
 }
 
+.filter-producers-checkbox + label,
+.filter-producers-radio + label {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font: inherit;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.filter-button:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:focus {
+  border: 1px solid #ee3643;
+  outline: none;
+}
+
+
 .filter-producers-checkbox:disabled + label,
 .filter-producers-radio:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+}
+
+/* секция catalog */
+
+.catalog-list li {
+  list-style: none;
+}
+
+.catalog-item {
+  text-align: center;
+
+}
+
+.catalog-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.catalog-item-layer {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item-layer:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border: none;
+}
+
+.catalog-item span {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.catalog-item .old-price {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.catalog-item .new-price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.buy-bookmarks {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.buy-bookmarks .btn-buy-item {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.buy-bookmarks .btn-buy-item:hover {
+  background-color: #5fbb2d;
+}
+
+.buy-bookmarks .btn-buy-item:focus {
+  background-color: #518534;
+}
+
+.buy-bookmarks .btn-bookmark-item {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+}
+
+.buy-bookmarks .btn-bookmark-item:hover {
+  border: 3px solid #32425c;
+}
+
+.buy-bookmarks .btn-bookmark-item:focus {
+  border: 3px solid rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 
