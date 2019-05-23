@@ -265,7 +265,7 @@ a {
 }
 
 .filter-button {
-  font: inherit;
+  font-family: inherit;
   font-size: 13px;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -322,12 +322,12 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-item .old-price {
+.old-price {
   color: #999999;
   text-decoration: line-through;
 }
 
-.catalog-item .new-price {
+.new-price {
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -343,25 +343,25 @@ a {
   background-color: #63a63e;
 }
 
-.buy-bookmarks .btn-buy-item:hover {
+.btn-buy-item:hover {
   background-color: #5fbb2d;
 }
 
-.buy-bookmarks .btn-buy-item:focus {
+.btn-buy-item:focus {
   background-color: #518534;
 }
 
-.buy-bookmarks .btn-bookmark-item {
+.btn-bookmark-item {
   color: #000000;
   background-color: #ffffff;
   border: 3px solid #63a63e;
 }
 
-.buy-bookmarks .btn-bookmark-item:hover {
+.btn-bookmark-item:hover {
   border: 3px solid #32425c;
 }
 
-.buy-bookmarks .btn-bookmark-item:focus {
+.btn-bookmark-item:focus {
   border: 3px solid rgba(50, 66, 92, 0.3);
   color: rgba(50, 66, 92, 0.3);
 }
@@ -413,7 +413,6 @@ a {
   background-color: #ba2732;
 }
 
-
 /* футер */
 
 .main-footer {
@@ -453,8 +452,8 @@ a {
 }
 
 .footer-rights,
-.footer-feedback b,
-.footer-copyright b {
+.footer-feedback p,
+.footer-copyright p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
