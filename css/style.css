@@ -17,6 +17,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* стили шапки */
 
 .main-header {
@@ -203,6 +211,70 @@ a {
 }
 
 
+/* секция offers */
+
+.offers-items li {
+  list-style: none;
+}
+
+.offers-items h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.offers-items a {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.offers-items a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offers-items a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.offers-items-materials {
+  background-color: #ffbf47;
+}
+
+.offers-items-instruments {
+  background-color: #3bbce3;
+}
+
+.offers-items-technics {
+  background-color: #dc91d8;
+}
+
+.offers-items-discont {
+  background-color: #8ed78f;
+}
+
+.offers-items-shipping {
+  background-color: #ffc047;
+}
+
+.offers-slider li {
+  list-style: none;
+  background-color: #584e44;
+  color: #ffffff;
+}
+
+.offers-slider h4 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.offers-slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* хлебные крошки */
 
 .breadcrumbs {
@@ -222,7 +294,8 @@ a {
 }
 
 /* секция perforator-filters */
-.catalog-title-container {
+
+.title-container {
   background-color: #f2f6f8;
 }
 
@@ -281,10 +354,82 @@ a {
   outline: none;
 }
 
-
 .filter-producers-checkbox:disabled + label,
 .filter-producers-radio:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+}
+
+/* секция popular-producers */
+
+.popular-producers-list li {
+  list-style: none;
+}
+
+.popular-producers-list a {
+  display: block;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.popular-producers-list a:hover {
+  display: block;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+
+.popular-producers-list a:focus {
+  border: none;
+  opacity: 0.3;
+    box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+/* секция services */
+
+.services {
+  background-color: #f5f8fa;
+}
+
+.services p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.services-container h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.services-tabs li {
+  list-style: none;
+}
+
+.services-tabs label {
+  display: block;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #32425c;
+  box-shadow: 0 1px 0px 0 rgba(41, 52, 73, 1),
+  inset 0 1px 0px 0 rgba(64, 80, 105, 1);
+}
+
+.services-tabs input:checked + label {
+  color: #32425c;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.tabs h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+
 }
 
 /* секция catalog */
