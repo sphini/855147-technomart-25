@@ -277,10 +277,13 @@ a {
 
 /* хлебные крошки */
 
-.breadcrumbs {
+.breadcrumbs,
+.title-find-by,
+.perforator-sort {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #000000;
 }
@@ -293,7 +296,47 @@ a {
  color: #000000;
 }
 
+/* секция perforator-sort */
+
+.perforator-sort {
+  background-color: #f7f3ec;
+}
+
+.sort-by {
+  list-style: none;
+}
+
+.sort-by a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-by a:hover {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-by a:focus {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.sort-by .sort-by-current {
+  color: #ee3643;
+  border-bottom: none;
+}
+
 /* секция perforator-filters */
+
+.toggle-controls {
+  background-color: #f7f3ec;
+}
+
+.price-controls input {
+  border: none;
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+}
 
 .title-container {
   background-color: #f2f6f8;
@@ -511,6 +554,39 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-list li {
+  list-style: none;
+
+}
+
+.pagination-item a,
+.pagination-item-current {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  display: block;
+}
+
+.pagination-item a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:focus {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 
 /* секция about us */
 
@@ -557,6 +633,25 @@ a {
 .btn-main:focus {
   background-color: #ba2732;
 }
+
+/* секция more-about */
+
+.more-about {
+  background-color: #f2f6f8;
+}
+
+.more-about-container h2 {
+  color: #000000;
+}
+
+.more-about-container p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
 
 /* футер */
 
