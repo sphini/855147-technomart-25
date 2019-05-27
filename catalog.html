@@ -8,20 +8,23 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- <div style="opacity: 0.8;"> -->
     <header class="main-header">
       <div class="main-header-menu">
-        <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <input id="search" type="search" name="search" placeholder="Поиск:">
-          <label for="search" class="visually-hidden">Поиск на сайте</label>
-        </form>
-        <ul class="main-header-menu-elements">
-          <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
-          <li class="header-basket basket-not-empty"><a href="basket.html">Корзина:</a></li>
-        </ul>
-        <a class="btn-header btn-order" href="#">Оформить заказ</a>
+        <div class="main-header-menu-wrapper container">
+          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input id="search" type="search" name="search" placeholder="Поиск:">
+            <label for="search" class="visually-hidden">Поиск на сайте</label>
+          </form>
+          <ul class="main-header-menu-elements">
+            <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
+            <li class="header-basket basket-not-empty"><a href="basket.html">Корзина:</a></li>
+          </ul>
+          <a class="btn-header btn-order" href="#">Оформить заказ</a>
+        </div>
       </div>
-      <div class="main-header-info">
+      <div class="main-header-info container">
         <p class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="main-adress-container">
           <span class="main-call">+7 (812) 555-05-55</span>
@@ -36,7 +39,7 @@
           </ul>
         </div>
       </div>
-      <nav class="main-navigation">
+      <nav class="site-navigation-wrapper container">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">Компания</a></li>
@@ -48,16 +51,21 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <ul class="breadcrumbs">
-        <li><a href="index.html"><img src="img/home-icon.svg" alt="Домашняя страница" width="14" height="12"></a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="instruments.html">Инструмент</a></li>
-        <li class="breadcrumbs-current">Перфораторы</li>
-      </ul>
-      <div class="title-container">
-        <h1 class="catalog-title">Перфораторы</h1>
+    <main>
+      <div class="breadcrumbs-wrapper container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html"><img src="img/home-icon.svg" alt="Домашняя страница" width="14" height="12"></a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="instruments.html">Инструмент</a></li>
+          <li class="breadcrumbs-current">Перфораторы</li>
+        </ul>
       </div>
+      <div class="title-container">
+        <div class="container catalog-title-wrapper">
+          <h1 class="catalog-title">Перфораторы</h1>
+        </div>
+      </div>
+      <div class="container perforator-filters-wrapper">
       <section class="perforator-filters">
         <h2 class="title-find-by">Фильтр:</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -98,6 +106,7 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
+      <div class="sort-list-wrapper">
       <section class="perforator-sort">
         <h2 class="title-find-by">Сортировка:</h2>
         <ul class="sort-by">
@@ -150,6 +159,7 @@
           </li>
           <!--Эти блоки повторяются 2 раза-->
         </ul>
+
         <div class="pagination-list-container">
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current">1</li>
@@ -159,6 +169,8 @@
           </ul>
         </div>
       </section>
+      </div>
+    </div>
       <section class="more-about">
         <div class="more-about-container">
           <h2 class="catalog-title">Пара слов о перфораторах</h2>
@@ -179,8 +191,8 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-nav-container">
-        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="лого 'Техномарт'" width="136" height="22"></a>
+      <div class="main-footer-nav-wrapper container">
+        <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="логотип компании Техномарт" width="136" height="22"></a>
         <ul class="site-nav-footer">
           <li><a href="about.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -189,9 +201,11 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <div class="main-footer-products-container">
-        <p class="main-footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-        <p class="main-footer-adress"> +7 (812) 555-05-55 </p>
+      <div class="main-footer-products-wrapper container">
+        <div class="main-footer-adress-wrapper">
+          <p class="main-footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+          <p> +7 (812) 555-05-55 </p>
+        </div>
         <ul class="site-nav-footer-products">
           <li><a href="materials.html">Материалы</a></li>
           <li><a href="technics.html">Техника</a></li>
@@ -199,21 +213,25 @@
           <li><a href="offers.html">Спецпредложения</a></li>
         </ul>
       </div>
-      <div class="main-footer-social-container">
-        <p class="footer-rights">2010-2017 Компания «‎Техномарт»‎  </p>
-        <p class="footer-rights">&#169; Все права защищены</p>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-        <div class="footer-feedback">
-          <p>Обратная связь:</p>
-          <a href="mail@htmlacademy.ru">HTML Academy</a>
-        </div>
-        <div class="footer-copyright">
-          <p>Разработано:</p>
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="footer-line">
+        <div class="main-footer-social-wrapper container">
+          <div class="footer-rights">
+            <p>&#169;2010-2017 Компания «‎Техномарт»‎</p>
+            <p>Все права защищены</p>
+          </div>
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+          <div class="footer-feedback">
+            <p>Обратная связь:</p>
+            <a href="mail@htmlacademy.ru">HTML Academy</a>
+          </div>
+          <div class="footer-copyright">
+            <p>Разработано:</p>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
         </div>
       </div>
     </footer>
