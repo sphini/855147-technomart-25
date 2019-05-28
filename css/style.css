@@ -334,16 +334,16 @@ a {
   color: #ffffff;
 }
 
-.offers-items a {
+.offers-item .btn-offers {
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
 }
 
-.offers-items a:hover {
+.offers-item .btn-offers:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.offers-items a:focus {
+.offers-item .btn-offers:focus {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
