@@ -29,7 +29,7 @@ a {
 
 .main-header {
   background-color: #f3f7f8;
-  margin-bottom: 23px;
+  margin-bottom: 60px;
 }
 
 /* стили верхней линии шапки */
@@ -271,6 +271,54 @@ a {
 
 /* секция offers */
 
+.offers-item {
+  width: 300px;
+  margin: 0 10px 20px 10px;
+  /* временно для сетки */
+  height: 123px;
+}
+
+.offers-item h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.offers-slider {
+  width: 620px;
+  height: 265px;
+  background-color: black;
+  margin: 0 10px 20px 10px;
+}
+
+.offers-item-wrapper {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  padding: 0;
+  padding-bottom: 45px;
+
+}
+
+.offers-item-wrapper h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.offers-slider-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.offers-items-shipping {
+position: absolute;
+top: 285px;
+right: 0;
+}
+
 .offers-items li {
   list-style: none;
 }
@@ -433,6 +481,7 @@ a {
 
 .title-container {
   background-color: #f2f6f8;
+  margin-bottom: 20px;
 }
 
 .catalog-title {
@@ -442,7 +491,6 @@ a {
   color: #32425c;
   text-transform: uppercase;
   display: block;
- margin-bottom: 20px;
 }
 
 .filter fieldset {
