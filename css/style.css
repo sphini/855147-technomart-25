@@ -13,6 +13,13 @@ body {
   background-color: white;
 }
 
+/* временно для поп-апов */
+.popup-feedback,
+.popup-map,
+.popup-added {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,7 +36,6 @@ a {
 
 .main-header {
   background-color: #f3f7f8;
-  margin-bottom: 60px;
 }
 
 /* стили верхней линии шапки */
@@ -207,8 +213,6 @@ a {
   padding: 0;
 }
 
-
-
 .main-user-form {
   width: 300px;
   display: flex;
@@ -299,8 +303,8 @@ a {
   justify-content: flex-start;
   position: relative;
   padding: 0;
+  padding-top: 60px;
   padding-bottom: 45px;
-
 }
 
 .offers-item-wrapper h4 {
@@ -313,10 +317,10 @@ a {
   padding: 0;
 }
 
-.offers-items-shipping {
-position: absolute;
-top: 285px;
-right: 0;
+.offers-item-wrapper :nth-child(6) {
+  position: absolute;
+  top: 345px;
+  right: 0;
 }
 
 .offers-items li {
@@ -406,7 +410,8 @@ right: 0;
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* секция perforator-sort */
@@ -447,13 +452,14 @@ right: 0;
 .perforator-filters-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .catalog-list {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .perforator-sort {
@@ -482,6 +488,8 @@ right: 0;
 .title-container {
   background-color: #f2f6f8;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-title {
@@ -489,6 +497,8 @@ right: 0;
   line-height: 30px;
   font-weight: 400;
   color: #32425c;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
   display: block;
 }
@@ -547,18 +557,48 @@ right: 0;
 
 /* секция popular-producers */
 
+.popular-producers-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 66px;
+}
+
+.popular-products-list-catalog {
+  margin-bottom: 32px;
+}
+
+.popular-producers-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-products-list-catalog li:nth-child(3n) {
+  margin-right: 0;
+
+}
+
+.popular-products-list-index li:nth-child(4n) {
+  margin-right: 0;
+}
+
 .popular-producers-list li {
   list-style: none;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .popular-producers-list a {
-  display: block;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
+  width: 218px;
+  height: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popular-producers-list a:hover {
-  display: block;
   border: 1px solid #e5e5e5;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -574,6 +614,8 @@ right: 0;
 
 .services {
   background-color: #f5f8fa;
+  padding-top: 65px;
+  padding-bottom: 98px;
 }
 
 .services p {
@@ -581,6 +623,8 @@ right: 0;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 .services-wrapper h2 {
@@ -588,6 +632,8 @@ right: 0;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .services-tabs li {
@@ -633,11 +679,11 @@ right: 0;
   list-style: none;
 }
 
-.catalog-list .catalog-item {
+/* .catalog-list .catalog-item {
   width: 220px;
   text-align: center;
 
-}
+} */
 
 .catalog-item {
   font-family: "PT Sans", Arial, sans-serif;
@@ -645,10 +691,13 @@ right: 0;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+  width: 218px;
   text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.catalog-item-layer {
+.catalog-item {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
@@ -710,6 +759,8 @@ right: 0;
 .pagination-list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-list li {
@@ -752,6 +803,7 @@ right: 0;
     display: flex;
   justify-content: space-between;
   padding-top: 75px;
+  padding-bottom: 85px;
 }
 
 .about-us-more {
@@ -810,6 +862,11 @@ right: 0;
   background-color: #f2f6f8;
 }
 
+.more-about-container {
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+
 .more-about-container h2 {
   color: #000000;
 }
@@ -828,7 +885,7 @@ right: 0;
 .main-footer {
   background-color: #32425c;
   color: #ffffff;
-      margin-top: 85px;
+
 }
 
 .main-footer-nav-wrapper {
