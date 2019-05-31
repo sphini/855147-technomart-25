@@ -702,7 +702,7 @@ a {
   border: 1px solid #e5e5e5;
 }
 
-.catalog-item-layer:hover {
+.catalog-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
   border: none;
 }
