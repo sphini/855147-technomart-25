@@ -17,11 +17,9 @@
             <label for="search" class="visually-hidden">Поиск на сайте</label>
           </form>
           <div class="order-wrapper">
-            <ul class="main-header-menu-elements">
-              <li class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
-              <li class="header-basket basket-not-empty"><a href="basket.html">Корзина:</a></li>
-            </ul>
-            <a class="btn-header btn-order" href="#">Оформить заказ</a>
+            <a class="header-bookmarks" href="bookmarks.html"><span>Закладки: 0</span></a>
+            <a class="header-basket basket-not-empty" href="basket.html"><span>Корзина:10</span></a>
+            <a class="btn-header btn-order" href="#"><span>Оформить заказ</span></a>
           </div>
         </div>
       </div>
@@ -33,7 +31,7 @@
         </div>
         <div class="main-user-form-in">
           <span>Равшан Джамшутович</span>
-          <a class="form-log-out" href="#">Выход</a>
+          <!-- <a class="form-log-out" href="#">Выход</a> -->
           <ul class="form-navigation">
             <li class="form-my-orders"><a href="#">Мои заказы</a></li>
             <li class="form-go-personal"><a href="#">Личный кабинет</a></li>
@@ -53,7 +51,8 @@
       </nav>
     </header>
     <main>
-      <div class="breadcrumbs-wrapper container">
+    <div class="container">
+      <div class="breadcrumbs-wrapper">
         <ul class="breadcrumbs">
           <li><a href="index.html"><img src="img/home-icon.svg" alt="Домашняя страница" width="14" height="12"></a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -61,10 +60,10 @@
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
       </div>
-      <div class="title-container container">
+      <div class="title-container">
           <h1 class="catalog-title">Перфораторы</h1>
       </div>
-      <div class="perforator-filters-wrapper container">
+      <div class="perforator-filters-wrapper">
       <section class="perforator-filters">
         <h2 class="title-find-by">Фильтр:</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -108,14 +107,14 @@
       <div class="sort-list-wrapper">
       <section class="perforator-sort">
         <h2 class="title-find-by">Сортировка:</h2>
-        <ul class="sort-by">
+        <ul class="sort-by sort-by-type">
           <li><a class="sort-by-current" href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <ul class="sort-by">
-          <li class="sort-way-down"><a href="#">По возрастанию</a></li>
-          <li class="sort-way-high"><a href="#">По убыванию</a></li>
+        <ul class="sort-by up-down-wrapper">
+          <li class="sort-way-down"><a href="#"><div></div><span class="visually-hidden">По возрастанию</span></a></li>
+          <li class="sort-way-high"><a href="#"><div></div><span class="visually-hidden">По убыванию</span></a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -174,7 +173,7 @@
       </div>
     </div>
       <section class="more-about">
-        <div class="more-about-container container">
+        <div class="more-about-container">
           <h2 class="catalog-title">Пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -193,7 +192,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-nav-wrapper container">
+      <div class="main-footer-nav-wrapper">
         <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="логотип компании Техномарт" width="136" height="22"></a>
         <ul class="site-nav-footer">
           <li><a href="about.html">Компания</a></li>
@@ -203,7 +202,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <div class="main-footer-products-wrapper container">
+      <div class="main-footer-products-wrapper">
         <div class="main-footer-adress-wrapper">
           <p class="main-footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
           <p> +7 (812) 555-05-55 </p>
@@ -216,7 +215,7 @@
         </ul>
       </div>
       <div class="footer-line">
-        <div class="main-footer-social-wrapper container">
+        <div class="main-footer-social-wrapper">
           <div class="footer-rights">
             <p>&#169;2010-2017 Компания «‎Техномарт»‎</p>
             <p>Все права защищены</p>
@@ -236,6 +235,7 @@
           </div>
         </div>
       </div>
+    </div>
     </footer>
   </body>
 </html>

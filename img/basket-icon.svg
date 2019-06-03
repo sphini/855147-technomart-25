@@ -1,11 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-<g>
-	<circle cx="4.5" cy="13.5" r="1.5"/>
-	<circle cx="12.5" cy="13.5" r="1.5"/>
-	<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
-</g>
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.9688mm" height="3.9688mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 396.88 396.88"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FEFEFE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_719091872">
+   <circle class="fil0" cx="119.06" cy="357.19" r="39.69"/>
+   <circle class="fil0" cx="330.73" cy="357.19" r="39.69"/>
+   <polygon class="fil0" points="396.88,52.92 107.69,52.92 96.52,0 -0,0 -0,52.92 53.74,52.92 106.26,291.04 396.88,291.04 396.88,238.13 249.8,238.13 396.88,183.91 "/>
+  </g>
+ </g>
 </svg>
