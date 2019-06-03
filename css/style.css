@@ -36,6 +36,7 @@ a {
 
 .main-header {
   background-color: #f3f7f8;
+  margin-bottom: 60px;
 }
 
 /* стили верхней линии шапки */
@@ -277,9 +278,9 @@ a {
 
 .offers-item {
   width: 300px;
-  margin: 0 10px 20px 10px;
   /* временно для сетки */
   height: 123px;
+  margin-bottom: 20px;
 }
 
 .offers-item h3 {
@@ -291,21 +292,33 @@ a {
 .offers-slider {
   width: 620px;
   height: 265px;
-  background-color: black;
-  margin: 0 10px 20px 10px;
+  background-color: #584e44;
 }
 
 .offers-item-wrapper {
-  width: 960px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  padding: 0;
-  padding-top: 60px;
-  padding-bottom: 45px;
+  margin-bottom: 50px;
 }
+
+.offers-item-wrapper-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-item-wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-item-wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offers-item-wrapper-right .offers-item:last-child {
+  margin-bottom: 0;
+}
+
 
 .offers-item-wrapper h4 {
   margin: 0;
@@ -315,12 +328,6 @@ a {
 .offers-slider-wrapper {
   margin: 0;
   padding: 0;
-}
-
-.offers-item-wrapper :nth-child(6) {
-  position: absolute;
-  top: 345px;
-  right: 0;
 }
 
 .offers-items li {
@@ -411,7 +418,6 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  margin-top: 25px;
 }
 
 /* секция perforator-sort */
@@ -986,11 +992,6 @@ a {
 .footer-copyright {
   width: 140px;
 }
-
-/* .feedback-wrapper {
-  display: flex;
-  margin-left: auto;
-} */
 
 .footer-feedback a,
 .footer-copyright a {
