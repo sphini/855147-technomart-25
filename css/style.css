@@ -718,10 +718,11 @@ img {
 
 .sort-way-down a,
 .sort-way-high a {
+  display: block;
   position: relative;
 }
 
-.sort-way-down div::before {
+.sort-way-down a::before {
   content: "";
   position: absolute;
   border: 6px solid transparent;
@@ -730,7 +731,7 @@ img {
   left: 30px;
 }
 
-.sort-way-high div::before {
+.sort-way-high a::before {
   content: "";
   position: absolute;
   border: 6px solid transparent;
@@ -1588,10 +1589,11 @@ img {
 .footer-feedback a:focus,
 .footer-copyright a:focus {
     color: #ee3643;
+    text-decoration: none;
 }
 
 .footer-rights {
-  width: 300px;
+  width: 230px;
   margin-right: auto;
 }
 
