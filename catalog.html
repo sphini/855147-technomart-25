@@ -14,7 +14,13 @@
           <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <input id="search" type="search" name="search" placeholder="Поиск:">
-            <label for="search" class="visually-hidden">Поиск на сайте</label>
+            <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.498mm" height="4.498mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 13.71 13.71"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            enable-background="new 0 0 17 17">
+            <path class="fil0" d="M13.71 12.57l-2.86 -2.86c0.78,-1.02 1.24,-2.28 1.24,-3.66 0,-3.34 -2.71,-6.05 -6.05,-6.05 -3.34,0 -6.05,2.71 -6.05,6.05 0,3.34 2.71,6.05 6.05,6.05 1.38,0 2.65,-0.47 3.66,-1.24l2.86 2.86 1.14 -1.14zm-12.09 -6.52c0,-2.45 1.99,-4.43 4.43,-4.43 2.44,0 4.43,1.99 4.43,4.43 0,2.44 -1.99,4.43 -4.43,4.43 -2.45,0 -4.43,-1.99 -4.43,-4.43z"/>
+            </svg>
           </form>
           <div class="order-wrapper">
             <a class="header-bookmarks" href="bookmarks.html"><span>Закладки: 0</span></a>
@@ -31,7 +37,6 @@
         </div>
         <div class="main-user-form-in">
           <span>Равшан Джамшутович</span>
-          <!-- <a class="form-log-out" href="#">Выход</a> -->
           <ul class="form-navigation">
             <li class="form-my-orders"><a href="#">Мои заказы</a></li>
             <li class="form-go-personal"><a href="#">Личный кабинет</a></li>
@@ -84,21 +89,21 @@
                 </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-producers">
             <legend>Производители:</legend>
             <ul>
-              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="bosch" name="Bosch"><label for="bosch">Bosch</label></li>
-              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="interskol" name="Интерскол"><label for="interskol">Интерскол</label></li>
-              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="makita" name="Makita"><label for="makita">Makita</label></li>
-              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="dewalt" name="Dewalt" disabled><label for="dewalt">Dewalt</label></li>
-              <li><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="hitachi" name="Hitachi"><label for="hitachi">Hitachi</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="bosch" name="Bosch"><label for="bosch">Bosch</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="interskol" name="Интерскол"><label for="interskol">Интерскол</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="makita" name="Makita"><label for="makita">Makita</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="dewalt" name="Dewalt" disabled><label for="dewalt">Dewalt</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-checkbox" type="checkbox" id="hitachi" name="Hitachi"><label for="hitachi">Hitachi</label></li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-producers-type">
             <legend>Питание:</legend>
             <ul>
-              <li><input class="visually-hidden filter-producers-radio" type="radio" name="power" id="accumulator" value="accumulator"><label for="accumulator">Аккумуляторные</label></li>
-              <li><input class="visually-hidden filter-producers-radio" type="radio" name="power" id="net" value="net"><label for="net">Сетевые</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-radio" type="radio" name="power" id="accumulator" value="accumulator"><label for="accumulator">Аккумуляторные</label></li>
+              <li class="filter-option"><input class="visually-hidden filter-producers-radio" type="radio" name="power" id="net" value="net"><label for="net">Сетевые</label></li>
             </ul>
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
@@ -140,9 +145,10 @@
                 <a class="btn-bookmark-item" href="#">В закладки</a>
               </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item flag">
               <img src="img/bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
+              <span class="old-price"></span>
               <span class="new-price">12500 р.</span>
               <div class="buy-bookmarks">
                 <a class="btn-buy-item" href="#">Купить</a>
@@ -152,6 +158,7 @@
           <li class="catalog-item">
               <img src="img/bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
+              <span class="old-price"></span>
               <span class="new-price">12500 р.</span>
               <div class="buy-bookmarks">
                 <a class="btn-buy-item" href="#">Купить</a>
@@ -181,18 +188,21 @@
           </p>
         </div>
       </section>
-      <section class="popup-added">
-        <h2 class="visually-hidden">Оформление покупки</h2>
-        <button class="popup-close" type="button">Закрыть</button>
-        <p>Товар добавлен в корзину!</p>
-        <div class="popup-item-added-btn-container">
-          <a class="btn-main btn-make-order" href="basket.html">Оформить заказ</a>
-          <a class="btn-main btn-continue" href="catalog.html">Продолжить покупки</a>
+      <section class="popup popup-added">
+        <div class="popup-wrapper">
+          <h2 class="visually-hidden">Оформление покупки</h2>
+          <button class="popup-close" type="button">Закрыть</button>
+          <p>Товар добавлен в корзину!</p>
+          <div class="popup-item-added-btn-container">
+            <a class="btn-main btn-make-order" href="basket.html">Оформить заказ</a>
+            <a class="btn-main btn-continue" href="catalog.html">Продолжить покупки</a>
+          </div>
         </div>
+        <div class="popup-line-bottom"></div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-nav-wrapper">
+      <div class="main-footer-nav-wrapper container">
         <a class="main-footer-logo" href="#"><img src="img/logo.svg" alt="логотип компании Техномарт" width="136" height="22"></a>
         <ul class="site-nav-footer">
           <li><a href="about.html">Компания</a></li>
@@ -202,10 +212,10 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <div class="main-footer-products-wrapper">
+      <div class="main-footer-products-wrapper container">
         <div class="main-footer-adress-wrapper">
           <p class="main-footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <p> +7 (812) 555-05-55 </p>
+          <p class="main-footer-adress"> +7 (812) 555-05-55 </p>
         </div>
         <ul class="site-nav-footer-products">
           <li><a href="materials.html">Материалы</a></li>
@@ -215,23 +225,23 @@
         </ul>
       </div>
       <div class="footer-line">
-        <div class="main-footer-social-wrapper">
+        <div class="main-footer-social-wrapper container">
           <div class="footer-rights">
-            <p>&#169;2010-2017 Компания «‎Техномарт»‎</p>
+            <p>&#169; 2010-2017 Компания «‎Техномарт»‎</p>
             <p>Все права защищены</p>
           </div>
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button fb-btn" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button inst-btn" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <div class="footer-feedback">
             <p>Обратная связь:</p>
-            <a href="mail@htmlacademy.ru">HTML Academy</a>
+            <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="footer-copyright">
-            <p>Разработано:</p>
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <p>Разработано -</p>
+            <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </div>
         </div>
       </div>
