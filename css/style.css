@@ -1955,9 +1955,6 @@ img {
   position: relative;
 }
 
-
-
-
 .popup-close {
   position: absolute;
   top: 10px;
@@ -1978,7 +1975,8 @@ img {
   left: 50%;
   margin-left: -310px;
   background-color: #ffffff;
-  top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   border-top: 8px solid #ff5257;
   box-shadow: 0 0 10px 5px rgba(47, 42, 43, 0.2);
   z-index: 10;
@@ -1989,7 +1987,8 @@ img {
   position: fixed;
   left:50%;
   margin-left:-470px;
-  top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   display: none;
   z-index: 10;
 }
