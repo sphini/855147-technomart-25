@@ -57,7 +57,7 @@
         <h2 class="visually-hidden">Услуги</h2>
         <div class="offers-item-wrapper">
           <div class="offers-item-wrapper-top">
-              <div class="offers-item offers-items-materials">
+              <div class="offers-item offers-items-materials flag">
                   <h3>Материалы</h3>
                   <a class="btn-main btn-offers" href="materials.html">На любой вкус</a>
               </div>
@@ -71,20 +71,25 @@
               </div>
           </div>
           <div class="offers-item-wrapper-bottom">
-            <div class="offers-slider">
-              <ul class="offers-slider-wrapper">
-                <li>
+              <div class="offers-slider">
+                <div class="slider-item">
                   <h4>Дрели</h4>
                   <p>Соседям на радость!</p>
                   <a class="btn-main btn-offers-slider" href="catalog.html">Открыть каталог</a>
-                </li>
-                <li>
+                </div>
+                <div class="slider-item">
                   <h4>Перфораторы</h4>
                   <p>Настоящие мужские игрушки</p>
                   <a class="btn-main btn-offers-slider" href="catalog.html">Открыть каталог</a>
-                </li>
-              </ul>
-            </div>
+                </div>
+                <div class="slider-controls">
+                  <i class="active"></i>
+                  <i></i>
+                </div>
+                <div class="slider-arrow slider-left"></div>
+                <div class="slider-arrow slider-right"></div>
+              </div>
+
             <div class="offers-item-wrapper-right">
               <div class="offers-item offers-items-discont">
                   <h3>Скидка 50%</h3>
@@ -164,35 +169,38 @@
       </section>
       <section class="services">
         <div class="services-wrapper container">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="services-tabs-container">
-          <ul class="services-tabs">
-            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-delivery" checked>
-            <label for="tab-delivery">Доставка</label></li>
-            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-warranty">
-            <label for="tab-warranty">Гарантия</label></li>
-            <li><input class="visually-hidden" type="radio" name="services-tabs" id="tab-credit">
-            <label for="tab-credit">Кредит</label></li>
-          </ul>
-          <div class="tabs">
-            <div>
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services-tabs-container">
+            <div class="services-tabs">
+              <input class="visually-hidden" type="radio" name="services-tabs" id="tab-delivery" checked>
+              <label for="tab-delivery">Доставка</label>
+              <input class="visually-hidden" type="radio" name="services-tabs" id="tab-warranty">
+              <label for="tab-warranty">Гарантия</label>
+              <input class="visually-hidden" type="radio" name="services-tabs" id="tab-credit">
+              <label for="tab-credit">Кредит</label>
             </div>
-            <div>
-              <h2>Гарантия</h2>
-              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </div>
-            <div>
-              <h2>Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-              <a class="btn-main btn-credit" href="#">Отправить заявку</a>
+            <div class="tabs-container">
+              <div class="tabs tab-delivery">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                <div class="tabs-background-1"></div>
+              </div>
+              <div class="tabs tab-guarantee">
+                <h2>Гарантия</h2>
+                <p>Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгаранием,
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+                <div class="tabs-background-2"></div>
+              </div>
+              <div class="tabs tab-credit">
+                <h2>Кредит</h2>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a class="btn-main btn-credit" href="#">Отправить заявку</a>
+                <div class="tabs-background-3"></div>
+              </div>
+              </div>
             </div>
           </div>
-          </div>
-        </div>
       </section>
       <div class="about-is-popup-wrapper">
       <section class="about-us">
@@ -218,7 +226,7 @@
       </section>
       <section class="popup-map">
         <h2 class="visually-hidden">Расположение фирмы</h2>
-        <div big-map-wrapper>
+        <div class="big-map-wrapper">
           <img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="940" height="447">
           <button class="popup-close" type="submit"><span class="visually-hidden">Закрыть</span></button>
         </div>
