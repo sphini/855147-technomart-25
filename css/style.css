@@ -1042,10 +1042,7 @@ img {
 }
 
 .price-controls span {
-  height: 1px;
-  width: 10px;
-  background-color: #000000;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .price-controls {
@@ -1211,7 +1208,7 @@ img {
 }
 
 .popular-producers-list a:focus {
-  border: none;
+  border: 1px solid rgba(255, 0, 0, 0.0);
   opacity: 0.3;
     box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1410,6 +1407,8 @@ img {
   border: 1px solid rgba(255, 0, 0, 0.0);
 }
 
+
+
 .flag::before {
   content: "";
   position: absolute;
@@ -1470,6 +1469,12 @@ img {
   padding: 40px 0;
   display: none;
 }
+
+.catalog-item:hover .buy-bookmarks {
+  display: block;
+}
+
+
 
 .buy-bookmarks .btn-buy-item {
   color: #ffffff;
@@ -1951,21 +1956,7 @@ img {
 }
 
 
-.popup-map {
-  position: absolute;
-  left:50%;
-  margin-left:-470px;
-  top: 30px;
-  display: none;
-}
 
-.popup-map img {
-  box-shadow: 0 0 10px 5px rgba(47, 42, 43, 0.2);
-}
-
-.big-map-wrapper {
-  position: relative;
-}
 
 .popup-close {
   position: absolute;
@@ -1990,11 +1981,37 @@ img {
   top: 30px;
   border-top: 8px solid #ff5257;
   box-shadow: 0 0 10px 5px rgba(47, 42, 43, 0.2);
+  z-index: 10;
+  display: none;
 }
 
-.popup-added,
-.popup-feedback {
+.popup-map {
+  position: fixed;
+  left:50%;
+  margin-left:-470px;
+  top: 30px;
   display: none;
+  z-index: 10;
+}
+
+.popup-map img {
+  box-shadow: 0 0 10px 5px rgba(47, 42, 43, 0.2);
+}
+
+.big-map-wrapper {
+  position: relative;
+}
+
+.popup-added {
+  /* display: block; */
+}
+
+.popup-map {
+  /* display: block; */
+}
+
+.popup-feedback {
+  /* display: block; */
 }
 
 .feedback-form label {
@@ -2099,6 +2116,7 @@ img {
 
 .btn-make-order,
 .btn-continue {
+  padding: 10px 0px;
   box-sizing: border-box;
   text-align: center;
   width: 220px;
@@ -2109,5 +2127,5 @@ img {
   justify-content: space-between;
   margin-bottom: 35px;
   position: relative;
-      z-index: 1;
+  z-index: 1;
 }
