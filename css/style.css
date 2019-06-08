@@ -38,7 +38,7 @@ img {
 }
 
 .header-catalog {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /* стили верхней линии шапки */
@@ -144,11 +144,6 @@ img {
   background-color: #ba2732;
 }
 
-.main-header-menu-elements {
- list-style: none;
- display: flex;
-}
-
 /* форма поиска */
 
 .search-form {
@@ -156,11 +151,14 @@ img {
 }
 
 .search-form input {
+  padding: 0;
+  margin: 0;
   background-color: transparent;
   border: none;
-  padding-left: 50px;
+  text-indent: 50px;
   width: 270px;
 }
+
 
 .search-form svg {
   position: absolute;
@@ -809,7 +807,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /* секция perforator-sort */
@@ -824,7 +822,6 @@ img {
   margin: 0;
   padding: 0;
   align-items: center;
-  /* margin-top: 10px; */
 }
 
  .sort-by-type li {
@@ -868,7 +865,6 @@ img {
 
 .perforator-sort {
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 19px;
 }
 
@@ -923,7 +919,6 @@ img {
 .sort-way-high a:focus::before {
   border-bottom: 11px solid #ee3643;
 }
-
 
 .up-down-wrapper {
   width: 60px;
@@ -1218,11 +1213,11 @@ img {
 .services {
   background-color: #f5f8fa;
   padding-top: 60px;
-  padding-bottom: 98px;
 }
 
 .services-tabs-container {
   display: flex;
+  align-items: flex-start;
 }
 
 .services p {
@@ -1232,8 +1227,6 @@ img {
   font-weight: 400;
   padding: 0;
   margin: 0;
-
-
 }
 
 .services-wrapper > p {
@@ -1279,6 +1272,7 @@ img {
 .services-tabs {
   position: relative;
   margin-right: 80px;
+  margin-bottom: 98px;
 }
 
 .tabs p {
@@ -1313,7 +1307,7 @@ img {
 .tabs-background-1 {
  position: absolute;
  left: 150px;
- top: 30px;
+ bottom: 0;
  background-image: url("../img/services-1.png");
  background-repeat: no-repeat;
  height: 261px;
@@ -1324,7 +1318,7 @@ img {
 .tabs-background-2 {
  position: absolute;
  left: 240px;
- top: 10px;
+ bottom: 0;
  background-image: url("../img/services-2.png");
  background-repeat: no-repeat;
  height: 283px;
@@ -1335,7 +1329,7 @@ img {
 .tabs-background-3 {
  position: absolute;
  left: 160px;
- top: 10px;
+ bottom: 0;
  background-image: url("../img/services-3.png");
  background-repeat: no-repeat;
  height: 285px;
@@ -1347,16 +1341,16 @@ img {
 .tabs {
   display: none;
   position: relative;
+  padding-bottom: 98px;
 }
 
-.tabs-container :nth-child(3) {
+.tabs-container :nth-child(1) {
   display: block;
 }
 
 .tab-credit .btn-credit {
   display: inline-block;
 }
-
 
 /* секция catalog */
 
@@ -1406,8 +1400,6 @@ img {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
   border: 1px solid rgba(255, 0, 0, 0.0);
 }
-
-
 
 .flag::before {
   content: "";
@@ -1834,7 +1826,6 @@ img {
 
 .footer-line {
   background-color: #293449;
-
 }
 
 .main-footer-social-wrapper {
