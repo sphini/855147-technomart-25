@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.498mm" height="4.498mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 13.71 13.71"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- enable-background="new 0 0 17 17">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.0303mm" height="4.5013mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2233.43 1002.3"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
+    .fil1 {fill:#EE3643}
     .fil0 {fill:#FEFEFE}
    ]]>
   </style>
@@ -18,7 +18,16 @@ viewBox="0 0 13.71 13.71"
    <g id="Layer_1">
    </g>
    <g id="Layer_2">
-    <path class="fil0" d="M13.71 12.57l-2.86 -2.86c0.78,-1.02 1.24,-2.28 1.24,-3.66 0,-3.34 -2.71,-6.05 -6.05,-6.05 -3.34,0 -6.05,2.71 -6.05,6.05 0,3.34 2.71,6.05 6.05,6.05 1.38,0 2.65,-0.47 3.66,-1.24l2.86 2.86 1.14 -1.14zm-12.09 -6.52c0,-2.45 1.99,-4.43 4.43,-4.43 2.44,0 4.43,1.99 4.43,4.43 0,2.44 -1.99,4.43 -4.43,4.43 -2.45,0 -4.43,-1.99 -4.43,-4.43z"/>
+    <path class="fil0" d="M1002.3 918.28l-208.93 -208.93c56.98,-74.5 90.58,-166.56 90.58,-267.38 0,-244 -197.97,-441.97 -441.97,-441.97 -244,0 -441.97,197.97 -441.97,441.97 0,244 197.97,441.97 441.97,441.97 100.82,0 193.59,-34.34 267.38,-90.58l208.93 208.93 83.28 -83.28 0.73 -0.73zm-883.21 -476.31c0,-178.98 145.38,-323.63 323.63,-323.63 178.25,0 323.63,145.38 323.63,323.63 0,178.25 -145.38,323.63 -323.63,323.63 -178.98,0 -323.63,-145.38 -323.63,-323.63z"/>
+   </g>
+  </g>
+  <g id="_853260544">
+   <g id="_720928160_0">
+    <g id="Layer_1_1">
+    </g>
+    <g id="Layer_2_2">
+     <path class="fil1" d="M2233.43 918.17l-208.91 -208.91c56.94,-74.71 90.47,-166.71 90.47,-267.34 0,-243.98 -197.71,-441.68 -441.66,-441.68 -243.98,0 -441.68,197.71 -441.68,441.68 0,243.95 197.71,441.66 441.68,441.66 100.62,0 193.63,-34.56 267.34,-90.47l208.91 208.91 83.34 -83.34 0.51 -0.51zm-882.83 -476.22c0,-178.91 145.36,-323.76 323.76,-323.76 178.38,0 323.74,145.36 323.74,323.76 0,178.38 -145.36,323.74 -323.74,323.74 -178.91,0 -323.76,-145.36 -323.76,-323.74z"/>
+    </g>
    </g>
   </g>
  </g>
