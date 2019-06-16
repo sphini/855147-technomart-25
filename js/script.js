@@ -14,7 +14,6 @@ var linkAddedClose = document.querySelector(".added-close");
 [].forEach.call(linkBuyItem, function(linkBuyItem) {
   linkBuyItem.addEventListener('click', function(evt) {
     evt.preventDefault();
-    console.log("жамкнул купить");
     popupAdded.classList.add("popup-show");
   });
 });
@@ -22,7 +21,6 @@ var linkAddedClose = document.querySelector(".added-close");
 if(linkAddedClose) {
   linkAddedClose.addEventListener("click", function(evt) {
     evt.preventDefault();
-    console.log(popupMap);
     popupAdded.classList.remove("popup-show");
   });
 }
@@ -50,7 +48,6 @@ if(popupFeedbackForm) {
   popupFeedbackForm.addEventListener("submit", function(evt) {
     if (!popupFeedbackLogin.value || !popupFeedbackEmail.value || !popupFeedbackText.value) {
     evt.preventDefault();
-    console.log("ппц!");
     } else {
     localStorage.setItem("popupFeedbackLogin", popupFeedbackLogin.value)
     localStorage.setItem("popupFeedbackEmail", popupFeedbackEmail.value)
@@ -71,17 +68,12 @@ servicesTabsAction.addEventListener("change", function() {
   containerDelivery.classList.remove("tabs-container-checked");
   containerWarranty.classList.remove("tabs-container-checked");
   containerCredit.classList.remove("tabs-container-checked");
-
-  console.log("Значение поменялось");
   if(tabDelivery.checked) {
     containerDelivery.classList.toggle("tabs-container-checked");
   }
-
-
   if(tabWarranty.checked) {
     containerWarranty.classList.toggle("tabs-container-checked");
   }
-
   if(tabCredit.checked) {
     containerCredit.classList.toggle("tabs-container-checked");
   }
@@ -117,7 +109,6 @@ var slides = document.querySelectorAll(".slider-item");
 var controlSlideLeft = document.querySelector(".slider-left");
 var controlSlideRight = document.querySelector(".slider-right");
 var currentSlide = 0;
-console.log(slides);
 
 function nextSlide() {
  slides[currentSlide].classList.remove("slider-item-current");
