@@ -9,43 +9,43 @@
   </head>
   <body>
     <header class="main-header">
-        <div class="main-header-menu">
-          <div class="main-header-menu-wrapper container">
-            <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input id="search" type="search" name="search" placeholder="Поиск:">
-              <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
-              <span class="lookfor-icon"></span>
-            </form>
-            <div class="order-wrapper">
-              <a class="header-bookmarks" href="bookmarks.html"><span>Закладки: 0</span></a>
-              <a class="header-basket" href="basket.html"><span>Корзина: 0</span></a>
-              <a class="btn-header btn-order" href="#"><span>Оформить заказ</span></a>
-            </div>
+      <div class="main-header-menu">
+        <div class="main-header-menu-wrapper container">
+          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип компании Техномарт" width="108" height="18"></a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input id="search" type="search" name="search" placeholder="Поиск:">
+            <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+            <span class="lookfor-icon"></span>
+          </form>
+          <div class="order-wrapper">
+            <a class="header-bookmarks" href="bookmarks.html"><span>Закладки: 0</span></a>
+            <a class="header-basket" href="basket.html"><span>Корзина: 0</span></a>
+            <a class="btn-header btn-order" href="#"><span>Оформить заказ</span></a>
           </div>
         </div>
-        <div class="main-header-info container">
-          <h1 class="main-title">Интернет-магазин строительных материалов &nbsp; и инструментов для ремонта</h1>
-          <div class="main-adress-container">
-            <span class="main-call">+7 (812) 555-05-55</span>
-            <p class="main-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <ul class="main-user-form">
-            <li class="btn-header main-user-form-login"><a href="#">Войти</a></li>
-            <li class="btn-header main-user-form-reg"><a href="#">Регистрация</a></li>
-          </ul>
+      </div>
+      <div class="main-header-info container">
+        <h1 class="main-title">Интернет-магазин строительных материалов &nbsp; и инструментов для ремонта</h1>
+        <div class="main-adress-container">
+          <span class="main-call">+7 (812) 555-05-55</span>
+          <p class="main-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <nav class="site-navigation-wrapper container">
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="offers.html">Спецпредложения</a></li>
-            <li><a href="shipping.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
+        <ul class="main-user-form">
+          <li class="btn-header main-user-form-login"><a href="#">Войти</a></li>
+          <li class="btn-header main-user-form-reg"><a href="#">Регистрация</a></li>
+        </ul>
+      </div>
+      <nav class="site-navigation-wrapper container">
+        <ul class="site-navigation">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="offers.html">Спецпредложения</a></li>
+          <li><a href="shipping.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="offers container">
@@ -67,7 +67,7 @@
           </div>
           <div class="offers-item-wrapper-bottom">
             <div class="offers-slider">
-              <div class="slider-item">
+              <div class="slider-item slider-item-current">
                 <h4>Дрели</h4>
                 <p>Соседям на радость!</p>
                 <a class="btn-main btn-offers-slider" href="catalog.html">Открыть каталог</a>
@@ -167,7 +167,7 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-tabs-container">
             <div class="services-tabs">
-              <input class="visually-hidden" type="radio" name="services-tabs" id="tab-delivery" checked>
+              <input class="visually-hidden" type="radio" name="services-tabs" id="tab-delivery"  checked>
               <label for="tab-delivery">Доставка</label>
               <input class="visually-hidden" type="radio" name="services-tabs" id="tab-warranty">
               <label for="tab-warranty">Гарантия</label>
@@ -175,7 +175,7 @@
               <label for="tab-credit">Кредит</label>
             </div>
             <div class="tabs-container">
-              <div class="tabs tab-delivery">
+              <div class="tabs tab-delivery  tabs-container-checked">
                 <h2>Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
                 <div class="tabs-background-1"></div>
@@ -213,16 +213,17 @@
             <div class="about-us-contacts">
               <h2>Контакты</h2>
               <p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
-              <a class="map-small" href="#"><img src="img/map-small.jpg" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="300" height="158"></a>
-              <a class="btn-main btn-section-contacts" href="index.html">Заблудились? Напишите нам!</a>
+              <a class="map-small" href="map.html"><img src="img/map-small.jpg" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="300" height="158"></a>
+              <a class="btn-main btn-section-contacts" href="form-feedback.html">Заблудились? Напишите нам!</a>
             </div>
           </div>
         </section>
         <section class="popup-map">
           <h2 class="visually-hidden">Расположение фирмы</h2>
           <div class="big-map-wrapper">
-            <img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="940" height="447">
-            <button class="popup-close" type="submit"><span class="visually-hidden">Закрыть</span></button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560679350647!5m2!1sru!2sru" width="940" height="447" allowfullscreen></iframe>
+            <p><img src="img/map-big.png" alt="Офис компании по адресу Большая Конюшенная ул. 19" width="940" height="447"></p>
+            <button class="popup-close popup-map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
           </div>
         </section>
         <section class="popup popup-feedback">
@@ -234,11 +235,23 @@
                 <li><label>Ваш e-mail:<input class="feedback-form-email" type="text" name="e-mail" placeholder="email@example.com"></label></li>
                 <li><label>Текст письма:<textarea class="feedback-form-text" name="text" rows="6" placeholder="В свободной форме"></textarea></label></li>
               </ul>
-              <button class="btn-main button btn-feedback-form" type="submit">Отправить</button>
+              <button class="btn-main button btn-feedback-form" type="input">Отправить</button>
             </form>
           </div>
           <div class="popup-line-bottom"></div>
-          <button class="popup-close" type="button">Закрыть</button>
+          <button class="popup-close popup-feedback-close" type="button">Закрыть</button>
+        </section>
+        <section class="popup popup-added">
+          <div class="popup-wrapper">
+            <h2 class="visually-hidden">Оформление покупки</h2>
+            <button class="popup-close added-close" type="button">Закрыть</button>
+            <p>Товар добавлен в корзину!</p>
+            <div class="popup-item-added-btn-container">
+              <a class="btn-main btn-make-order" href="basket.html">Оформить заказ</a>
+              <a class="btn-main btn-continue" href="catalog.html">Продолжить покупки</a>
+            </div>
+          </div>
+          <div class="popup-line-bottom"></div>
         </section>
       </div>
     </main>
@@ -285,5 +298,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
