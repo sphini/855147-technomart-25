@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="6.8941mm" height="5.7096mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 32.21 26.68"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13.5125mm" height="5.7096mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2648.89 1119.27"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .fil0 {fill:#FEFEFE}
+    .fil2 {fill:#B5B5B5}
     .fil1 {fill:#C5C5C5}
+    .fil0 {fill:#FEFEFE}
    ]]>
   </style>
  </defs>
  <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <polygon class="fil0" points="11.42,13.73 25.15,0 32.21,7.07 12.6,26.68 10.24,26.68 -0,16.44 -0,12.9 5.3,7.6 "/>
-  <polygon class="fil1" points="5.3,11.17 1.8,14.67 11.42,24.29 28.64,7.07 25.15,3.57 11.42,17.29 "/>
+  <polygon class="fil0" points="1776.72,576 2352.72,0 2648.89,296.6 1826.22,1119.27 1727.22,1119.27 1297.64,689.68 1297.64,541.17 1519.97,318.83 "/>
+  <polygon class="fil0" points="479.08,576 1055.08,0 1351.25,296.6 528.58,1119.27 429.58,1119.27 -0,689.68 -0,541.17 222.34,318.83 "/>
+  <polygon class="fil1" points="222.34,468.6 75.51,615.42 479.08,1019 1201.48,296.6 1055.08,149.77 479.08,725.34 "/>
+  <polygon class="fil2" points="1522.94,468.6 1376.11,615.42 1779.68,1019 2502.08,296.6 2355.68,149.77 1779.68,725.34 "/>
  </g>
 </svg>

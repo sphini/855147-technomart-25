@@ -12,7 +12,7 @@ var linkBuyItem = document.querySelectorAll(".btn-buy-item");
 var linkAddedClose = document.querySelector(".added-close");
 
 [].forEach.call(linkBuyItem, function(linkBuyItem) {
-  linkBuyItem.addEventListener('click', function(evt) {
+  linkBuyItem.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupAdded.classList.add("popup-show");
   });
