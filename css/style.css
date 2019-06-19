@@ -1222,6 +1222,11 @@ input[type="radio"].visually-hidden {
   background-position: 26px 0;
 }
 
+.filter-producers-checkbox:focus + label,
+.filter-producers-radio:focus + label {
+  text-decoration: underline;
+}
+
 .filter-producers-type label::before {
   content: "";
   position: absolute;
@@ -1546,7 +1551,9 @@ input[type="radio"].visually-hidden {
   max-width: 100%;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus,
+.catalog-item:focus-within {
   -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
           box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
   border: 1px solid rgba(255, 0, 0, 0.0);
@@ -1609,11 +1616,12 @@ input[type="radio"].visually-hidden {
   height: 88px;
   padding: 44px 0;
   background-color: #ffffff;
-  display: none;
+  z-index: -1;
 }
 
-.catalog-item:hover .buy-bookmarks {
-  display: block;
+.catalog-item:hover .buy-bookmarks,
+.catalog-item .buy-bookmarks:focus-within {
+  z-index: 1;
 }
 
 .buy-bookmarks .btn-buy-item {
